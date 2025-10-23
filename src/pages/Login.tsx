@@ -67,9 +67,11 @@ export default function Login() {
           />
           <br />
           <br />
-          <Button className="button" type="submit">
-            Login
-          </Button>
+          <Link className="link-login" to="/home">
+            <Button className="button" type="submit">
+              Login
+            </Button>
+          </Link>
           <br /> <br />
           <p>
             Don't have an account?
