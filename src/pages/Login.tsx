@@ -67,11 +67,11 @@ export default function Login() {
           />
           <br />
           <br />
-          <Link className="link-login" to="/home">
+         
             <Button className="button" type="submit">
-              Login
+              <Link className="link-login" to="/home"> login</Link>
             </Button>
-          </Link>
+         
           <br /> <br />
           <p>
             Don't have an account?
