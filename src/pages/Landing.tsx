@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { Navbar } from "../components/ui";
+import heroPic from "../assets/heroPic.jpg";
 
 export default function Landing() {
   return (
@@ -52,7 +53,7 @@ export default function Landing() {
               <div className="image-container">
                 <img
                   className="hero-img"
-                  src="/src/assets/heroPic.jpg"
+                  src={heroPic}
                   alt="Job Application Dashboard"
                 />
                 <div className="floating-card card-1">
