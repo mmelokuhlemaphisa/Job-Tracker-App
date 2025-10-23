@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "json-server --watch db.json --port 5001",
+    "server": "json-server --watch db.json --port $PORT --host 0.0.0.0",
     "client": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "start": "concurrently \"npm run server\" \"npm run preview\""
   },
+  
   "dependencies": {
     "concurrently": "^9.2.1",
     "react": "^19.1.1",
