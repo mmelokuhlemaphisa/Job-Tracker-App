@@ -36,7 +36,7 @@ export default function JobPage() {
 
     const fetchJob = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/jobs/${id}`);
+        const response = await fetch(`http://localhost:5001/jobs/${id}`);
         if (!response.ok) throw new Error("Job not found");
         const data: Job = await response.json();
 

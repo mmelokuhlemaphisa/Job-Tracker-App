@@ -21,7 +21,7 @@ export default function Register() {
       try {
         // ✅ Check if username already exists (not password)
         const res = await fetch(
-          `http://localhost:3000/users?username=${newUser.username}`
+          `http://localhost:5001/users?username=${newUser.username}`
         );
         const existingUsers = await res.json();
 
@@ -33,7 +33,7 @@ export default function Register() {
         }
 
         // ✅ Save new user to /users collection
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:5001/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newUser),
