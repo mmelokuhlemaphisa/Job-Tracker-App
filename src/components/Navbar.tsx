@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import logo from "../assets/Logo-preview.jpg";
 
 interface NavbarProps {
   variant?: "landing" | "main";
@@ -14,8 +15,8 @@ export default function Navbar({
 }: NavbarProps) {
   if (variant === "landing") {
     return (
-      <div className="hearder">
-        <img className="logo" src="/src/assets/Logo-preview.jpg" alt="Logo" />
+      <div className="header">
+        <img className="logo" src={logo} alt="Logo" />
         <h1>JobTracker</h1>
       </div>
     );
